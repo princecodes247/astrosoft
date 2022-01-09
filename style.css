@@ -205,6 +205,8 @@ select, input {
 	flex-direction: column;
 	grid-gap: 1em;
 	flex: 1;
+	position: relative;
+	z-index: 2;
 
 }
 
@@ -260,7 +262,7 @@ select, input {
 	z-index: 0;
 	/*cursor: none;*/
 	/*display: none;*/
-	pointer-events: none;
+	/*pointer-events: none;*/
 }
 
 
@@ -621,6 +623,22 @@ text-shadow: none;
 	display: flex;
 	flex-direction: column;
 	grid-gap: 2em;
+}
+
+.cursor {
+	--cursor-x: 10px;
+	--cursor-y: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 60px;
+	height: 60px;
+	border-radius: 100px;
+	border: 2px solid #fff;
+	transform: translate(var(--cursor-x), var(--cursor-y));	
+	transition: transform 1s;
+	z-index: 10;
+	filter: invert();
 }
 
 .img_text_grid {
