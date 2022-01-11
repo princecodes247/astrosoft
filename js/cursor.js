@@ -3,9 +3,9 @@ cursorElem.classList.add("cursor")
 let cursor = document.querySelector(".cursor")
 let body = document.querySelector("body")
 body.addEventListener("mousemove", e => {
-	console.log(e)
-	cursor.style.setProperty("--cursor-x", (e.pageX - 30) + "px")
-	cursor.style.setProperty("--cursor-y", (e.pageY -30) + "px")
+	// console.log(e)
+	cursor.style.left = (e.pageX - 20) + "px"
+	cursor.style.top = (e.pageY - 20) + "px"
 })
 
   // body.addEventListener('mousemove', (e) => {

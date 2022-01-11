@@ -7,11 +7,15 @@
 	<!-- <script src="tailwind.js"></script> -->
 	<link rel="stylesheet" href="style.css">
 </head>
-<body>
-	<!-- <div class="pattern_backdrop"></div> -->
+	<scrollbar>	
+<body class="dark">
+	<article class="scroll-content">
+ 
+   
+
 	<header class="">
 		<div class="logo">
-			<img src="./logo.svg" alt="">
+			<img src="assets/logo.svg" alt="">
 		</div>
 		<nav>
 			<ul>
@@ -32,13 +36,19 @@
 			</div>
 			<div class="hero_img">
 				<div class="hero_img__backdrop"></div>
-				<!-- <img src="./rocket.png" alt=""> -->
+				<!-- <img src="assets/rocket.png" alt=""> -->
 			</div>
 			<div id="particles-js"></div>
 	</section>
 	<div class="curve_page">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#030303" fill-opacity="1" d="M0,192L80,186.7C160,181,320,171,480,170.7C640,171,800,181,960,192C1120,203,1280,213,1360,218.7L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="var(--theme-hero-background-color)" fill-opacity="1" d="M0,192L80,186.7C160,181,320,171,480,170.7C640,171,800,181,960,192C1120,203,1280,213,1360,218.7L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
 	</div>
+	<section>
+		
+	</section>
+	<section>
+		<img src="" alt="">
+	</section>
 	<section class="about_sect">
 		<div class="about_set">
 			<div class="about_text">
@@ -46,7 +56,7 @@
 				<p>Change and improve your business structure to make it as effiecient as possible</p>
 			</div>
 			<div class="about_img">
-				<img src="./directions.svg" width="100" alt="mlml">
+				<img src="assets/directions.svg" width="100" alt="mlml">
 			</div>
 		</div>
 		<div class="about_set">
@@ -55,7 +65,7 @@
 				<p>Our recommendations have been tried, tested and improved severally</p>
 			</div>
 			<div class="about_img">
-				<img src="./answer.svg" width="100" alt="mlml">
+				<img src="assets/answer.svg" width="100" alt="mlml">
 			</div>
 		</div>
 		<div class="about_set">
@@ -64,7 +74,7 @@
 				<p>Today's customers are becoming tech-savvy, constantly connected and want to do business with brands that understand them and the experience they want</p>
 			</div>
 			<div class="about_img">
-				<img src="./timeline.svg" width="100" alt="mlml">
+				<img src="assets/timeline.svg" width="100" alt="mlml">
 			</div>
 		</div>
 		<div class="about_set">
@@ -72,7 +82,7 @@
 				<h2>Dive deeper. Scale your business faster and stress free.</h2>
 			</div>
 			<div class="about_img">
-				<img src="./investment.svg" width="100" alt="mlml">
+				<img src="assets/investment.svg" width="100" alt="mlml">
 			</div>
 		</div>
 	</section>
@@ -82,7 +92,7 @@
 			<div class=" testimonial_card">
 					<div class="testimonial_header">
 						<div class="card_img">
-						<img src="./person-1.jpg" alt="">
+						<img src="assets/person-1.jpg" alt="">
 					</div>
 						<div class="testimonial_header__text">
 							<h4 >
@@ -104,6 +114,7 @@
 		</div>
 	</section>
 	<section class="contact">
+		<h2>Contact Us</h2>
 		<div class="social_links">
 			<div class="social_link"></div>
 			<div class="social_link"></div>
@@ -115,22 +126,36 @@
 			<input type="text">
 			<button class="button">Reach Out to Us</button>
 		</form>
-		<button class="button">Join the newsletter</button>
+		<h2>Stay updated!</h2>
+		<p>Get info on promos, events and discounts</p>
+		<form action="" class="newsletter">
+
+			<input type="text" placeholder="Enter Your Email Address">
+			<button class="button">Join</button>
+		</form>
 	</section>
 	<footer>
 		<div class="logo">
 			AstroSoft
 		</div>
 	</footer>
-	<div class="cursor"></div>
+	<!-- <div class="cursor"></div> -->
+	 <div class="scrollbar-track scrollbar-track-x">
+        <div class="scrollbar-thumb scrollbar-thumb-x"></div>
+    </div>
+    <div class="scrollbar-track scrollbar-track-y">
+        <div class="scrollbar-thumb scrollbar-thumb-y"></div>
+    </div>
+  </article>
+</scrollbar>
+	<script src="js/particles.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/header.js"></script>
+	<!-- <script src="js/cursor.js"></script> -->
+	<script src="js/anime.min.js"></script>
+	<script src="js/animations.js"></script>
+	<!-- <script src="js/smooth-scrollbar.js"></script> -->
+	<!-- <script src="js/scroll.js"></script> -->
 
-	<script src="particles.js"></script>
-	<script src="app.js"></script>
-	<script src="header.js"></script>
-	<script src="cursor.js"></script>
-	<script src="anime.min.js"></script>
-	<script src="animations.js">
-		
-	</script>
 </body>
 </html>
